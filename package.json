@@ -1,7 +1,9 @@
 {
   "name": "sumran",
   "version": "0.0.0",
-  "scripts": {},
+  "scripts": {
+    "commit": "git add . && npx --no-install cz"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/karmasakshi/sumran.git"
@@ -9,5 +11,13 @@
   "author": "Karmasakshi Goyal <> (https://karmasakshi.com)",
   "license": "Unlicense",
   "private": true,
-  "homepage": "https://github.com/karmasakshi/sumran#readme"
+  "homepage": "https://github.com/karmasakshi/sumran#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
