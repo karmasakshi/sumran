@@ -11,8 +11,8 @@
     "release-major": "npx --no-install standard-version --release-as major && git push --follow-tags",
     "release-minor": "npx --no-install standard-version --release-as minor && git push --follow-tags",
     "release-patch": "npx --no-install standard-version --release-as patch && git push --follow-tags",
-    "add-dependencies": "npm add next react react-dom",
-    "remove-dependencies": "npm remove next react react-dom",
+    "add-dependencies": "npm add next react react-dom sass",
+    "remove-dependencies": "npm remove next react react-dom sass",
     "add-devDependencies": "npm add --save-dev @types/node @types/react cz-conventional-changelog standard-version typescript",
     "remove-devDependencies": "npm remove @types/node @types/react cz-conventional-changelog standard-version typescript",
     "reinstall-dependencies": "npm run remove-dependencies && npm run remove-devDependencies && npm run add-dependencies && npm run add-devDependencies && npm run build"
@@ -28,7 +28,8 @@
   "dependencies": {
     "next": "^10.0.5",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.2"
   },
   "devDependencies": {
     "@types/node": "^14.14.20",
