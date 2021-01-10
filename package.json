@@ -13,8 +13,8 @@
     "release-patch": "npx --no-install standard-version --release-as patch && git push --follow-tags",
     "add-dependencies": "npm add next react react-dom",
     "remove-dependencies": "npm remove next react react-dom",
-    "add-devDependencies": "npm add --save-dev cz-conventional-changelog standard-version",
-    "remove-devDependencies": "npm remove cz-conventional-changelog standard-version",
+    "add-devDependencies": "npm add --save-dev @types/node @types/react cz-conventional-changelog standard-version typescript",
+    "remove-devDependencies": "npm remove @types/node @types/react cz-conventional-changelog standard-version typescript",
     "reinstall-dependencies": "npm run remove-dependencies && npm run remove-devDependencies && npm run add-dependencies && npm run add-devDependencies && npm run build"
   },
   "repository": {
@@ -31,8 +31,11 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/node": "^14.14.20",
+    "@types/react": "^17.0.0",
     "cz-conventional-changelog": "^3.3.0",
-    "standard-version": "^9.1.0"
+    "standard-version": "^9.1.0",
+    "typescript": "^4.1.3"
   },
   "config": {
     "commitizen": {
