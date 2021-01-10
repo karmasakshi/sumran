@@ -2,7 +2,12 @@
   "name": "sumran",
   "version": "0.0.0",
   "scripts": {
-    "commit": "git add . && npx --no-install cz"
+    "commit": "git add . && npx --no-install cz",
+    "dry-release": "npx --no-install standard-version --dry-run",
+    "release": "npx --no-install standard-version && git push --follow-tags",
+    "release-major": "npx --no-install standard-version --release-as major && git push --follow-tags",
+    "release-minor": "npx --no-install standard-version --release-as minor && git push --follow-tags",
+    "release-patch": "npx --no-install standard-version --release-as patch && git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -13,7 +18,8 @@
   "private": true,
   "homepage": "https://github.com/karmasakshi/sumran#readme",
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.1.0"
   },
   "config": {
     "commitizen": {
