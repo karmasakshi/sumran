@@ -1,5 +1,19 @@
-import '../styles.scss'
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import '../styles.scss';
 
-export default function MyApp({ Component, pageProps }: any) {
-  return <Component {...pageProps} />
-}
+const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppProps): JSX.Element => (
+
+  <>
+
+    <Head>
+      <meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width"></meta>
+    </Head>
+
+    <Component {...pageProps} />
+
+  </>
+
+)
+
+export default MyApp;

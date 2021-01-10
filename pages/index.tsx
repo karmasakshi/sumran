@@ -1,5 +1,9 @@
-function HomePage() {
-  return <div>Welcome to Next.js!</div>
-}
+export interface HomePageProps { }
 
-export default HomePage
+const HomePage: (props: HomePageProps) => JSX.Element = (): JSX.Element => (
+
+  <div>Welcome to Next.js!</div>
+
+)
+
+export default HomePage;
