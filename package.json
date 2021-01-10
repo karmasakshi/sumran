@@ -2,15 +2,17 @@
   "name": "sumran",
   "version": "0.0.0",
   "scripts": {
-    "build": "",
+    "build": "next build",
+    "serve": "next dev",
+    "start": "npm run build && next start",
     "commit": "git add . && npx --no-install cz",
     "dry-release": "npx --no-install standard-version --dry-run",
     "release": "npx --no-install standard-version && git push --follow-tags",
     "release-major": "npx --no-install standard-version --release-as major && git push --follow-tags",
     "release-minor": "npx --no-install standard-version --release-as minor && git push --follow-tags",
     "release-patch": "npx --no-install standard-version --release-as patch && git push --follow-tags",
-    "add-dependencies": "npm add",
-    "remove-dependencies": "npm remove",
+    "add-dependencies": "npm add next react react-dom",
+    "remove-dependencies": "npm remove next react react-dom",
     "add-devDependencies": "npm add --save-dev cz-conventional-changelog standard-version",
     "remove-devDependencies": "npm remove cz-conventional-changelog standard-version",
     "reinstall-dependencies": "npm run remove-dependencies && npm run remove-devDependencies && npm run add-dependencies && npm run add-devDependencies && npm run build"
@@ -23,6 +25,11 @@
   "license": "Unlicense",
   "private": true,
   "homepage": "https://github.com/karmasakshi/sumran#readme",
+  "dependencies": {
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.1.0"
