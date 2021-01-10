@@ -14,6 +14,6 @@ const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppPr
 
   </>
 
-)
+);
 
 export default MyApp;
