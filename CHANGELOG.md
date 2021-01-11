@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/karmasakshi/sumran/compare/v1.1.0...v1.2.0) (2021-01-11)
+
+
+### Features
+
+* add product list ([b6796b9](https://github.com/karmasakshi/sumran/commit/b6796b9b045ec1784bdcdec335ec3202a6935de1))
+* add products ([141ae14](https://github.com/karmasakshi/sumran/commit/141ae14977eaebc2b0b78b78469ff245654af291))
+* rename ([36d9179](https://github.com/karmasakshi/sumran/commit/36d9179ddccc345546e3f2209a66b8554d992611))
+
 ## [1.1.0](https://github.com/karmasakshi/sumran/compare/v1.0.2...v1.1.0) (2021-01-11)
 
 
