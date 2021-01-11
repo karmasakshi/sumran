@@ -1,7 +1,9 @@
 - Fix Safari favicon
 - Add security headers
 - Add ESLint
-- Add product table
+- Add custom messages for ordering
 - Add packages
-- Add prices
+- Add order price
 - Add area info.
+- Add custom Error page
+- Compare with others (TS, TS + ESlint)
