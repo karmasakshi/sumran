@@ -11,7 +11,7 @@ const Page: (props: PageProps) => JSX.Element = ({ children, title }: PageProps)
 
   <div className={styles.page}>
 
-    <Head><title>{'Sumran Organic Farms' + (title.length ? ' - ' + title : '')}</title></Head>
+    <Head><title>{'Sumran' + (title.length ? ' - ' + title : '')}</title></Head>
 
     <section className="pb-32 pt-16 px-4 text-center">{children}</section>
 
