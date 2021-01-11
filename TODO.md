@@ -1,6 +1,5 @@
 - Fix Safari favicon
 - Add security headers
-- Update SEO tags
 - Add ESLint
 - Add product table
 - Add packages

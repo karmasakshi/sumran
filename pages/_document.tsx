@@ -17,8 +17,8 @@ class MyDocument extends Document {
 
           {/* General Meta */}
           <meta name="application-name" content="Sumran Organic Farms"></meta>
-          <meta name="description" content="Sumran Organic Farms."></meta>
-          <meta name="keywords" content="sumran, organic, farms"></meta>
+          <meta name="description" content="Fresh veggies, harvested weekly."></meta>
+          <meta name="keywords" content="sumran, organic, farms, gurgaon, fresh, vegetables, veggies, buy"></meta>
 
           {/* Apple Icons and Meta */}
           <meta name="apple-mobile-web-app-capable" content="yes"></meta>
@@ -28,7 +28,7 @@ class MyDocument extends Document {
           <link rel="mask-icon" color="#282022" href="/icons/safari-pinned-tab.svg"></link>
 
           {/* Facebook Meta */}
-          <meta property="og:description" content="Sumran Organic Farms."></meta>
+          <meta property="og:description" content="Fresh veggies, harvested weekly."></meta>
           <meta property="og:image" content="https://sumran.in/icons/og-image.jpg"></meta>
           <meta property="og:image:height" content="279"></meta>
           <meta property="og:image:width" content="279"></meta>
@@ -44,7 +44,7 @@ class MyDocument extends Document {
 
           {/* Twitter Meta */}
           <meta property="twitter:card" content="summary"></meta>
-          <meta property="twitter:description" content="Sumran Organic Farms."></meta>
+          <meta property="twitter:description" content="Fresh veggies, harvested weekly."></meta>
           <meta property="twitter:image" content="https://sumran.in/icons/og-image.jpg"></meta>
           <meta property="twitter:title" content="Sumran Organic Farms"></meta>
           <meta property="twitter:url" content="https://sumran.in"></meta>
