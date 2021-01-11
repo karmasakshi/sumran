@@ -7,7 +7,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
   <section>
 
-    <div className="inline-block p-8 rounded shadow-lg">
+    <div className="bg-white border border-gray-100 inline-block mt-4 p-4 rounded shadow-lg">
 
       <table className="table-fixed text-base">
 
@@ -22,7 +22,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
           {
             PRODUCTS.map((product: Product): JSX.Element => (
               <tr key={product.name}>
-                <td className="text-left">{product.name} {product.otherNames.length ? <span className="text-gray-400">({product.otherNames.join(', ')})</span> : ''}</td>
+                <td className="text-left">{product.name} {product.otherNames.length ? <span className="text-gray-500 text-xs">({product.otherNames.join(', ')})</span> : ''}</td>
                 <td className="text-right">{product.rate} / {product.unit}</td>
               </tr>
             ))
@@ -33,7 +33,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
     </div>
 
-    <p className="block mt-4 text-xs">* Prices are indicative and depend on the quality, quantity and demand of harvest.<br />Final price will be communicated to you upon inquiry.</p>
+    <p className="block mt-2 text-xs">* Prices are indicative and depend on the quality, quantity and demand of harvest.<br />Final price will be communicated to you upon inquiry.</p>
 
   </section>
 
