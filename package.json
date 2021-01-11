@@ -12,8 +12,8 @@
     "release-major": "npx --no-install standard-version --release-as major && git push --follow-tags",
     "release-minor": "npx --no-install standard-version --release-as minor && git push --follow-tags",
     "release-patch": "npx --no-install standard-version --release-as patch && git push --follow-tags",
-    "add-dependencies": "npm add next react react-dom sass",
-    "remove-dependencies": "npm remove next react react-dom sass",
+    "add-dependencies": "npm add autoprefixer next postcss react react-dom sass tailwindcss",
+    "remove-dependencies": "npm remove autoprefixer next postcss react react-dom sass tailwindcss",
     "add-devDependencies": "npm add --save-dev @types/node @types/react cz-conventional-changelog standard-version typescript",
     "remove-devDependencies": "npm remove @types/node @types/react cz-conventional-changelog standard-version typescript",
     "reinstall-dependencies": "npm run remove-dependencies && npm run remove-devDependencies && npm run add-dependencies && npm run add-devDependencies && npm run build"
@@ -27,10 +27,13 @@
   "private": true,
   "homepage": "https://github.com/karmasakshi/sumran#readme",
   "dependencies": {
+    "autoprefixer": "^10.2.1",
     "next": "^10.0.5",
+    "postcss": "^8.2.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "sass": "^1.32.2"
+    "sass": "^1.32.2",
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
     "@types/node": "^14.14.20",
