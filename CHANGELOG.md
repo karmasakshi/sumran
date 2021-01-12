@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/karmasakshi/sumran/compare/v1.4.0...v1.5.0) (2021-01-12)
+
+
+### Features
+
+* add divider ([c046a53](https://github.com/karmasakshi/sumran/commit/c046a539f779134ea5a4b0a9763cd5d2e93d022f))
+* add security headers ([29432e7](https://github.com/karmasakshi/sumran/commit/29432e741143a0cfdac308068206395a4620f269))
+
+
+### Bug Fixes
+
+* lint issues ([b9d3cc9](https://github.com/karmasakshi/sumran/commit/b9d3cc905f831484970e418e641ac3daf90aac90))
+
 ## [1.4.0](https://github.com/karmasakshi/sumran/compare/v1.3.2...v1.4.0) (2021-01-12)
 
 
