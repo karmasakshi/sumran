@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/karmasakshi/sumran/compare/v1.8.0...v1.9.0) (2021-01-12)
+
+
+### Features
+
+* add google analytics ([8ac534c](https://github.com/karmasakshi/sumran/commit/8ac534c9521aa5dcbb517ddb2984aea270f2d8fb))
+
 ## [1.8.0](https://github.com/karmasakshi/sumran/compare/v1.7.0...v1.8.0) (2021-01-12)
 
 
