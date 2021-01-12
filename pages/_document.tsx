@@ -1,14 +1,21 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { GA_MEASUREMENT_ID } from '../services/analytics';
 
 class MyDocument extends Document {
 
   render(): JSX.Element {
+
+    const googleAnalyticsScript: string = `window.dataLayer = window.dataLayer || []; function gtag(){ dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}');`;
 
     return (
 
       <Html lang="en">
 
         <Head>
+
+          {/* Google Analytics */}
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}></script>
+          <script dangerouslySetInnerHTML={{ __html: googleAnalyticsScript }}></script>
 
           {/* General Icons */}
           <link rel="icon" type="image/png" href="/favicon.ico"></link>

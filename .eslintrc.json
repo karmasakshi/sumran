@@ -21,6 +21,8 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "no-console": "error",
+    "no-unused-vars": "warn",
     "padded-blocks": [
       "error",
       "always"
