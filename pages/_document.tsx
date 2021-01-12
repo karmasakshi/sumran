@@ -58,7 +58,7 @@ class MyDocument extends Document {
 
         </Head>
 
-        <body className="antialiased leading-relaxed text-2xl">
+        <body className="antialiased leading-relaxed">
           <Main />
           <NextScript />
         </body>

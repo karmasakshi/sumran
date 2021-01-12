@@ -5,11 +5,11 @@ interface ProductListProps { };
 
 const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element => (
 
-  <section>
+  <>
 
     <div className="bg-white border border-gray-100 inline-block mt-4 p-4 rounded shadow-lg">
 
-      <table className="table-fixed text-base">
+      <table className="table-fixed">
 
         <thead>
           <tr>
@@ -33,9 +33,9 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
     </div>
 
-    <p className="block mt-2 text-xs">* Prices are indicative and depend on the quality, quantity and demand of harvest.<br />Final price will be communicated to you upon inquiry.</p>
+    <span className="block mt-2 text-xs">* Prices are indicative and depend on the quality, quantity and demand of harvest. Final price will be communicated to you upon inquiry.</span>
 
-  </section>
+  </>
 
 );
 

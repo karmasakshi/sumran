@@ -25,7 +25,7 @@ export const PRODUCTS: Product[] = [
   {
     isAvailable: true,
     name: 'Cabbage',
-    otherNames: ['Patta-Gobhi'],
+    otherNames: ['Patta Gobhi'],
     rate: 25,
     unit: '250g'
   },
