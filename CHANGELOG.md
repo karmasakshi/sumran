@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/karmasakshi/sumran/compare/v1.6.0...v1.7.0) (2021-01-12)
+
+
+### Features
+
+* add cors header ([3c2d678](https://github.com/karmasakshi/sumran/commit/3c2d678ab7e1918731cf7e9ee7b73b1b41760925))
+* add csp header ([7a3c972](https://github.com/karmasakshi/sumran/commit/7a3c972379fc9c9bb4e9d8b3305bcd22ee8d4963))
+
 ## [1.6.0](https://github.com/karmasakshi/sumran/compare/v1.5.1...v1.6.0) (2021-01-12)
 
 
