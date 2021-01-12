@@ -1,6 +1,5 @@
 - Fix Safari favicon
 - Add security headers
-- Add ESLint
 - Add custom messages for ordering
 - Add packages
 - Add order selection
