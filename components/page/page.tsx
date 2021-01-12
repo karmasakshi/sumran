@@ -13,7 +13,7 @@ const Page: (props: PageProps) => JSX.Element = ({ children, title }: PageProps)
 
     <Head><title>{'Sumran' + (title.length ? ' - ' + title : '')}</title></Head>
 
-    <div className="pb-32 pt-8 px-4 text-center">{children}</div>
+    <div className="pb-16 pt-4 px-2 text-center">{children}</div>
 
   </div>
 

@@ -7,7 +7,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
   <>
 
-    <div className="bg-white border border-gray-100 inline-block mt-4 p-4 rounded shadow-lg sm:p-8">
+    <div className="bg-white border border-gray-100 inline-block mt-2 p-4 rounded shadow-lg">
 
       <table className="table-fixed">
 
@@ -33,7 +33,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
     </div>
 
-    <span className="block mt-2 text-xs">* <strong>Prices are indicative</strong> and depend on the quality, quantity and demand of harvest.</span>
+    <span className="block mt-2 px-4 text-xs">* <strong>Prices are indicative</strong> and depend on the quality, quantity and demand of harvest.</span>
 
   </>
 
