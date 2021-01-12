@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/karmasakshi/sumran/compare/v1.3.2...v1.4.0) (2021-01-12)
+
+
+### Features
+
+* add responsive style ([1492271](https://github.com/karmasakshi/sumran/commit/1492271f0d6aed06222646543e80fc95d8fd2ec3))
+
 ### [1.3.2](https://github.com/karmasakshi/sumran/compare/v1.3.1...v1.3.2) (2021-01-12)
 
 
