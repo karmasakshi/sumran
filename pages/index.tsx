@@ -20,10 +20,9 @@ const HomePage: (props: HomePageProps) => JSX.Element = (): JSX.Element => (
       <Image alt="Divider" height={24} src="/flower.svg" width={24} />
     </div>
 
-    <div>
-      <span className="block text-xl">Rate Card</span>
-      <ProductList></ProductList>
-    </div>
+    <p className="block text-xl">Rate Card</p>
+
+    <ProductList></ProductList>
 
   </Page>
 

@@ -1,5 +1,4 @@
 - Fix Safari favicon
-- Add security headers
 - Add bundle products
 - Add ordering - selection, total, messaging
 - Add area info.
