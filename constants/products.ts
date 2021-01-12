@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
   {
     isAvailable: true,
     name: 'Brinjal',
-    otherNames: ['Aubergine', 'Baingan', 'Eggplant'],
+    otherNames: ['Baingan', 'Eggplant'],
     rate: 22,
     unit: '250g'
   },
@@ -67,7 +67,7 @@ export const PRODUCTS: Product[] = [
   {
     isAvailable: true,
     name: 'Green Onion',
-    otherNames: ['Scallion'],
+    otherNames: ['Hara Pyaaz', 'Scallion'],
     rate: 35,
     unit: '250g'
   },

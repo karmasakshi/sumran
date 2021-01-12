@@ -7,7 +7,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
   <>
 
-    <div className="bg-white border border-gray-100 inline-block mt-4 p-4 rounded shadow-lg">
+    <div className="bg-white border border-gray-100 inline-block mt-4 p-4 rounded shadow-lg sm:p-8">
 
       <table className="table-fixed">
 
