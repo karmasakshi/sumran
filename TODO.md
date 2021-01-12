@@ -4,4 +4,6 @@
 - Add ordering - selection, total, messaging
 - Add area info.
 - Add custom Error page
+- Check Lighthouse recommendations
 - Compare with others (TS, TS + ESlint)
+- Redirect www

@@ -3,6 +3,10 @@ const headers = async () => [
     source: '/(.*)',
     headers: [
       {
+        key: 'Access-Control-Allow-Origin',
+        value: 'https://sumran.in'
+      },
+      {
         key: 'Permissions-Policy',
         value: 'autoplay=(), camera=(), fullscreen=(), geolocation=(), microphone=()'
       },
