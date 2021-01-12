@@ -16,7 +16,14 @@ const HomePage: (props: HomePageProps) => JSX.Element = (): JSX.Element => (
       <a className="px-2 pb-1 text-green-700 hover:text-green-500" href="https://wa.me/+919873775667?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sumran.">Contact Us</a>
     </div>
 
-    <ProductList></ProductList>
+    <div className="inline-flex my-4">
+      <Image alt="Divider" height={24} src="/flower.svg" width={24} />
+    </div>
+
+    <div>
+      <span className="block text-xl">Rate Card</span>
+      <ProductList></ProductList>
+    </div>
 
   </Page>
 

@@ -3,7 +3,7 @@
 - Add ESLint
 - Add custom messages for ordering
 - Add packages
-- Add order price
+- Add order selection
 - Add area info.
 - Add custom Error page
 - Compare with others (TS, TS + ESlint)
