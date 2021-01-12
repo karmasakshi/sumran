@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/karmasakshi/sumran/compare/v1.7.0...v1.8.0) (2021-01-12)
+
+
+### Features
+
+* update csp header ([645dd5e](https://github.com/karmasakshi/sumran/commit/645dd5e72f698cf26fe9bbd220835f0d871e0ce7))
+
+
+### Bug Fixes
+
+* csp header ([43eac22](https://github.com/karmasakshi/sumran/commit/43eac227ceac4e43aecf9d16c3d47c5186c5d016))
+* csp header ([9f8074d](https://github.com/karmasakshi/sumran/commit/9f8074d3a1fec735193ad17bf23d720206565fad))
+* csp header for safari ([21a9353](https://github.com/karmasakshi/sumran/commit/21a93535956964caf50e184701fec4c463d76453))
+
 ## [1.7.0](https://github.com/karmasakshi/sumran/compare/v1.6.0...v1.7.0) (2021-01-12)
 
 
