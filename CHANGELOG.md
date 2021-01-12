@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/karmasakshi/sumran/compare/v1.5.1...v1.6.0) (2021-01-12)
+
+
+### Features
+
+* add security headers ([3792523](https://github.com/karmasakshi/sumran/commit/3792523e7a64c09ad8cb27361f72eebad2a338ca))
+
 ### [1.5.1](https://github.com/karmasakshi/sumran/compare/v1.5.0...v1.5.1) (2021-01-12)
 
 
