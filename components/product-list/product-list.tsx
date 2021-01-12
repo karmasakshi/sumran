@@ -33,7 +33,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
     </div>
 
-    <span className="block mt-2 text-xs">* Prices are indicative and depend on the quality, quantity and demand of harvest. Final price will be communicated to you upon inquiry.</span>
+    <span className="block mt-2 text-xs">* <strong>Prices are indicative</strong> and depend on the quality, quantity and demand of harvest.</span>
 
   </>
 
