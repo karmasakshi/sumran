@@ -3,8 +3,16 @@ const headers = async () => [
     source: '/(.*)',
     headers: [
       {
+        key: 'Permissions-Policy',
+        value: 'autoplay=(), camera=(), fullscreen=(), geolocation=(), microphone=()'
+      },
+      {
         key: 'Referrer-Policy',
         value: 'no-referrer'
+      },
+      {
+        key: 'Strict-Transport-Security',
+        value: 'max-age=63072000; includeSubDomains; preload'
       },
       {
         key: 'X-Content-Type-Options',
