@@ -20,5 +20,27 @@
     "react",
     "@typescript-eslint"
   ],
-  "rules": {}
+  "rules": {
+    "padded-blocks": [
+      "error",
+      "always"
+    ],
+    "react/react-in-jsx-scope": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ]
+  },
+  "globals": {
+    "JSX": "readonly"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
