@@ -8,7 +8,7 @@ const headers = async () => [
       },
       {
         key: 'Content-Security-Policy',
-        value: process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true' ? "upgrade-insecure-requests; base-uri 'self'; default-src 'none'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; form-action 'none'; frame-ancestors 'none'; img-src 'self' data:; manifest-src 'self'; object-src 'none'; script-src-elem 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; require-trusted-types-for 'script'" : ''
+        value: process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true' ? "upgrade-insecure-requests; base-uri 'self'; default-src 'none'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; form-action 'none'; frame-ancestors 'none'; img-src 'self' data:; manifest-src 'self'; object-src 'none'; script-src 'self'; script-src-elem 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; require-trusted-types-for 'script'" : ''
       },
       {
         key: 'Permissions-Policy',
