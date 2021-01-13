@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/karmasakshi/sumran/compare/v1.12.0...v1.13.0) (2021-01-13)
+
+
+### Features
+
+* update csp header ([9c62ce2](https://github.com/karmasakshi/sumran/commit/9c62ce236132397d5a9d959178a58723f99a9922))
+
 ## [1.12.0](https://github.com/karmasakshi/sumran/compare/v1.11.0...v1.12.0) (2021-01-13)
 
 
