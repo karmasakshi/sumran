@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/karmasakshi/sumran/compare/v1.10.0...v1.11.0) (2021-01-13)
+
+
+### Features
+
+* remove pinned tab ([bd05300](https://github.com/karmasakshi/sumran/commit/bd0530024ab8b64d3b0ab28baa274dda1ba9fe06))
+* remove safari pinned tab ([6920877](https://github.com/karmasakshi/sumran/commit/6920877aecb299f857d51bcbbfe33561d8de3133))
+
 ## [1.10.0](https://github.com/karmasakshi/sumran/compare/v1.9.0...v1.10.0) (2021-01-13)
 
 
