@@ -32,7 +32,6 @@ class MyDocument extends Document {
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
           <meta name="apple-mobile-web-app-title" content="Sumran"></meta>
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"></link>
-          <link rel="mask-icon" color="#282022" href="/icons/safari-pinned-tab.svg"></link>
 
           {/* Facebook Meta */}
           <meta property="og:description" content="Fresh veggies, harvested weekly."></meta>
