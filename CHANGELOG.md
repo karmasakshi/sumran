@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/karmasakshi/sumran/compare/v1.11.0...v1.12.0) (2021-01-13)
+
+
+### Features
+
+* add splitbee ([2398450](https://github.com/karmasakshi/sumran/commit/2398450a8ce2da496b1194d896563ab0561760ee))
+
 ## [1.11.0](https://github.com/karmasakshi/sumran/compare/v1.10.0...v1.11.0) (2021-01-13)
 
 
