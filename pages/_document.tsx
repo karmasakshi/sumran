@@ -46,9 +46,6 @@ class MyDocument extends Document {
           {/* Google Icons and Meta */}
           <meta name="theme-color" content="#ffffff"></meta>
 
-          {/* Microsoft Icons and Meta */}
-          <meta name="msapplication-config" content="/icons/browserconfig.xml"></meta>
-
           {/* Twitter Meta */}
           <meta property="twitter:card" content="summary"></meta>
           <meta property="twitter:description" content="Fresh veggies, harvested weekly."></meta>
