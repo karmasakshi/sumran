@@ -17,6 +17,9 @@ class MyDocument extends Document {
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}></script>
           <script dangerouslySetInnerHTML={{ __html: googleAnalyticsScript }}></script>
 
+          {/* Splitbee */}
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
+
           {/* General Icons */}
           <link rel="icon" type="image/png" href="/favicon.ico"></link>
           <link rel="icon" sizes="16x16" type="image/png" href="/icons/favicon-16x16.png"></link>
