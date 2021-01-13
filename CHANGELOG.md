@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/karmasakshi/sumran/compare/v1.9.0...v1.10.0) (2021-01-13)
+
+
+### Features
+
+* remove ie icons ([6a8d1cb](https://github.com/karmasakshi/sumran/commit/6a8d1cb7f0a9bb948b1c0fafeaf9355a2e464914))
+
 ## [1.9.0](https://github.com/karmasakshi/sumran/compare/v1.8.0...v1.9.0) (2021-01-12)
 
 
