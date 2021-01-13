@@ -8,7 +8,7 @@ const headers = async () => [
       },
       {
         key: 'Content-Security-Policy',
-        value: process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true' ? "upgrade-insecure-requests; default-src 'none'; font-src https://fonts.gstatic.com; img-src 'self' data:; manifest-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; require-trusted-types-for 'script'" : ''
+        value: process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true' ? "upgrade-insecure-requests; default-src 'none'; connect-src https://hive.splitbee.io; font-src https://fonts.gstatic.com; img-src 'self' data:; manifest-src 'self'; script-src 'self' https://cdn.splitbee.io 'sha256-yjbYreQDRCum38k0q7V/TkgD+KjqDDWwLI7T6xX31dQ=' https://www.googletagmanager.com 'sha256-yjbYreQDRCum38k0q7V/TkgD+KjqDDWwLI7T6xX31dQ='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; require-trusted-types-for 'script'" : ''
       },
       {
         key: 'Permissions-Policy',
