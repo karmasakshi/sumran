@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.18.0](https://github.com/karmasakshi/sumran/compare/v1.17.0...v1.18.0) (2021-01-14)
+
+
+### Features
+
+* custom error page ([5d66669](https://github.com/karmasakshi/sumran/commit/5d6666924b4744b9cb1484a3511859a8fc883611))
+* enabled redirecting www ([c638cf8](https://github.com/karmasakshi/sumran/commit/c638cf8d40337ba2623d197db7377204e8955033))
+
 ## [1.17.0](https://github.com/karmasakshi/sumran/compare/v1.16.0...v1.17.0) (2021-01-14)
 
 
