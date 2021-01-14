@@ -8,4 +8,5 @@
 - Redirect www
 - Configure ESLint to scan all dirs
 - Add Google Analytics (https://developers.google.com/analytics/devguides/collection/gtagjs)
+- Add custom events Splitbee
 - Refactor services
