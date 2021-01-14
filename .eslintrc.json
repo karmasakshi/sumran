@@ -24,6 +24,7 @@
   ],
   "rules": {
     "no-console": "error",
+    "no-shadow": "error",
     "no-unused-vars": "warn",
     "padded-blocks": [
       "error",
@@ -48,7 +49,8 @@
       {
         "caseSensitive": true
       }
-    ]
+    ],
+    "@typescript-eslint/no-empty-interface": "off"
   },
   "globals": {
     "JSX": "readonly"

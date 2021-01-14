@@ -1,6 +1,5 @@
 const headers = async () => [
   {
-    source: '/(.*)',
     headers: [
       {
         key: 'Access-Control-Allow-Origin',
@@ -34,18 +33,19 @@ const headers = async () => [
         key: 'X-XSS-protection',
         value: '1; mode=block'
       }
-    ]
+    ],
+    source: '/(.*)'
   }
 ];
 
 const rewrites = async () => [
   {
-    source: '/sb.js',
-    destination: 'https://cdn.splitbee.io/sb.js'
+    destination: 'https://cdn.splitbee.io/sb.js',
+    source: '/sb.js'
   },
   {
-    source: '/sb-api/:slug',
-    destination: 'https://hive.splitbee.io/:slug'
+    destination: 'https://hive.splitbee.io/:slug',
+    source: '/sb-api/:slug'
   }
 ];
 

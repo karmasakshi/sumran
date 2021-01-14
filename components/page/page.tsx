@@ -5,7 +5,7 @@ import styles from './page.module.scss';
 interface PageProps {
   children: ReactNode;
   title: string;
-};
+}
 
 const Page: (props: PageProps) => JSX.Element = ({ children, title }: PageProps): JSX.Element => (
 

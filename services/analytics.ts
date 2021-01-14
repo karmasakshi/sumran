@@ -1,11 +1,16 @@
-export const logAction = (action: string, additionalData: any = {}) => {
+import { AppWindow } from '../interfaces/app-window';
 
-  (window as any).splitbee.track(action, additionalData);
+declare let appWindow: AppWindow;
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const logAction = (action: string, data: any = {}): void => {
+
+  appWindow.splitbee.track(action, data);
 
 };
 
-export const logPageView = (path: string) => {
+export const logNavigation = (path: string): void => {
 
-  (window as any).splitbee.track('Page View', path);
+  appWindow.splitbee.track('Navigation', path);
 
 };
