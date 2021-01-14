@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/karmasakshi/sumran/compare/v1.16.0...v1.17.0) (2021-01-14)
+
+
+### Features
+
+* add h1 for accessibility ([442a6d5](https://github.com/karmasakshi/sumran/commit/442a6d57eb52abec8e784d579793abe829b6550e))
+
+
+### Bug Fixes
+
+* aspect ratio of hero image ([edd3417](https://github.com/karmasakshi/sumran/commit/edd3417662b8a6282ae9a16890626eba112843ab))
+
 ## [1.16.0](https://github.com/karmasakshi/sumran/compare/v1.15.0...v1.16.0) (2021-01-14)
 
 
