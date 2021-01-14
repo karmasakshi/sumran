@@ -1,8 +1,9 @@
 - Add bundle products
+- Add other messengers
 - Add ordering - selection, total, messaging
 - Add area info.
 - Add custom Error page
-- Check Lighthouse recommendations
 - Redirect www
 - Refactor services
 - Add one-time execution block and set app version: splitbee.user.set({ appVersion: '' })
+- Get ESLint rules from SBC

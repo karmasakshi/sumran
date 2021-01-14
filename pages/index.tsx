@@ -11,7 +11,7 @@ const HomePage: (props: HomePageProps) => JSX.Element = (): JSX.Element => (
     <Image alt="Logo" height={320} src="/logo.png" width={320} />
 
     <div className="mt-4 text-2xl">
-      <span>Fresh veggies, harvested weekly.</span>
+      <h1>Fresh veggies, harvested weekly.</h1>
       <br />
       <a className="inline-flex mt-2 px-2 pb-1 text-green-700 hover:text-green-500" href="https://wa.me/+919971013347?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sumran." rel="noreferrer" target="_blank">Contact Us</a>
     </div>
