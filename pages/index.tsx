@@ -8,7 +8,7 @@ const HomePage: (props: HomePageProps) => JSX.Element = (): JSX.Element => (
 
   <Page title="">
 
-    <Image alt="Logo" height={320} src="/logo.png" width={320} />
+    <Image alt="Logo" height={320} src="/logo.png" width={324} />
 
     <div className="mt-4 text-2xl">
       <h1>Fresh veggies, harvested weekly.</h1>
