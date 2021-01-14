@@ -10,8 +10,8 @@ class MyDocument extends Document {
 
         <Head>
 
-          {/* Splitbee */}
-          <script async src="https://cdn.splitbee.io/sb.js"></script>
+          {/* Splitbee (Proxied) */}
+          <script async data-api="/sb-api" src="/sb.js"></script>
 
           {/* General Icons */}
           <link rel="icon" type="image/png" href="/favicon.ico"></link>

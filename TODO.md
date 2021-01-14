@@ -1,4 +1,3 @@
-- Fix Safari favicon
 - Add bundle products
 - Add ordering - selection, total, messaging
 - Add area info.
@@ -7,6 +6,5 @@
 - Compare with others (TS, TS + ESlint)
 - Redirect www
 - Configure ESLint to scan all dirs
-- Add Google Analytics (https://developers.google.com/analytics/devguides/collection/gtagjs)
-- Add custom events Splitbee
 - Refactor services
+- Add one-time execution block and set app version: splitbee.user.set({ appVersion: '' })
