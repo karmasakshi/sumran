@@ -27,6 +27,7 @@ const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppPr
   }, [router.events]);
 
   return (
+
     <>
 
       <Head>
@@ -36,6 +37,7 @@ const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppPr
       <Component {...pageProps} />
 
     </>
+
   );
 
 };
