@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/karmasakshi/sumran/compare/v1.15.0...v1.16.0) (2021-01-14)
+
+
+### Features
+
+* eslint rules ([2c7bdf6](https://github.com/karmasakshi/sumran/commit/2c7bdf628b562a6f04c6b2f60dc2768003d2fef8))
+
+
+### Bug Fixes
+
+* lint issues ([8e4dbde](https://github.com/karmasakshi/sumran/commit/8e4dbde437e8b933d583da13db056006644ce479))
+
 ## [1.15.0](https://github.com/karmasakshi/sumran/compare/v1.14.0...v1.15.0) (2021-01-14)
 
 
