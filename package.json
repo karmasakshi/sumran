@@ -5,7 +5,7 @@
     "build": "next build",
     "serve": "next dev",
     "start": "npm run build && next start",
-    "lint": "npx --no-install eslint components/**/*.tsx constants/*.ts interfaces/*.ts pages/*.tsx services/*.ts *.js *.ts",
+    "lint": "npx --no-install eslint . --ext .js,.jsx,.ts,.tsx",
     "precommit": "npm run lint && npm run build",
     "commit": "git add . && npx --no-install cz",
     "dry-release": "npx --no-install standard-version --dry-run",

@@ -3,8 +3,6 @@
 - Add area info.
 - Add custom Error page
 - Check Lighthouse recommendations
-- Compare with others (TS, TS + ESlint)
 - Redirect www
-- Configure ESLint to scan all dirs
 - Refactor services
 - Add one-time execution block and set app version: splitbee.user.set({ appVersion: '' })
