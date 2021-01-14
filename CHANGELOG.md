@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/karmasakshi/sumran/compare/v1.13.0...v1.14.0) (2021-01-14)
+
+
+### Features
+
+* replace ga with splitbee ([a37b159](https://github.com/karmasakshi/sumran/commit/a37b159bf824569a25e6ba76eed217adb8255b95))
+
+
+### Bug Fixes
+
+* csp header ([a95e9ca](https://github.com/karmasakshi/sumran/commit/a95e9cae02431c6817316082202721f9b174ef18))
+
 ## [1.13.0](https://github.com/karmasakshi/sumran/compare/v1.12.0...v1.13.0) (2021-01-13)
 
 
