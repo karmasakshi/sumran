@@ -4,14 +4,26 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { version } from '../package.json';
 
 const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppProps): JSX.Element => {
 
   const router = useRouter();
 
-  useEffect(() => {
+  useEffect((): void => {
 
-    const logNavigationHandler = (url: string) => {
+    setTimeout((): void => {
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      if ((window as any).splitbee) (window as any).splitbee.user.set({ appVersion: version });
+
+    }, 5000);
+
+  });
+
+  useEffect((): () => void => {
+
+    const logNavigationHandler = (url: string): void => {
 
       logNavigation(url);
 
@@ -19,7 +31,7 @@ const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppPr
 
     router.events.on('routeChangeStart', logNavigationHandler);
 
-    return () => {
+    return (): void => {
 
       router.events.off('routeChangeStart', logNavigationHandler);
 

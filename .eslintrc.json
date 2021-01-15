@@ -50,6 +50,7 @@
         "caseSensitive": true
       }
     ],
+    "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/no-empty-interface": "off"
   },
   "globals": {
