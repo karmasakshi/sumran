@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { version } from '../package.json';
 
 class MyDocument extends Document {
 
@@ -11,7 +12,11 @@ class MyDocument extends Document {
         <Head>
 
           {/* Splitbee (Proxied) */}
-          <script async data-api="/sb-api" src="/sb.js"></script>
+          <script async data-api="/sb-api" src="/sb.js" onLoad={() => {
+
+            if ((window as any).splitbee) (window as any).splitbee.user.set({ appVersion: version });
+
+          }}></script>
 
           {/* General Icons */}
           <link rel="icon" type="image/png" href="/favicon.ico"></link>

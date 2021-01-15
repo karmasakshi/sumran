@@ -1,3 +1,0 @@
-- Refactor services
-- Add one-time execution block and set app version: splitbee.user.set({ appVersion: '' })
-- Get ESLint rules from SBC
