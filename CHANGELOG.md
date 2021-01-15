@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/karmasakshi/sumran/compare/v1.18.1...v1.19.0) (2021-01-15)
+
+
+### Features
+
+* report app version to splitbee ([6dcddf2](https://github.com/karmasakshi/sumran/commit/6dcddf2410412c97ff705e454a2d6b5458fa81e7))
+
 ### [1.18.1](https://github.com/karmasakshi/sumran/compare/v1.18.0...v1.18.1) (2021-01-15)
 
 ## [1.18.0](https://github.com/karmasakshi/sumran/compare/v1.17.0...v1.18.0) (2021-01-14)
