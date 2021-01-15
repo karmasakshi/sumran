@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.20.0](https://github.com/karmasakshi/sumran/compare/v1.19.0...v1.20.0) (2021-01-15)
+
+
+### Features
+
+* add timeout for version reporting ([2fb07c2](https://github.com/karmasakshi/sumran/commit/2fb07c2406ec3b352d202f4497aec293510dec4a))
+* remove custom error page ([7b9926c](https://github.com/karmasakshi/sumran/commit/7b9926c8b5545a915cbd41f56092d3aaa3ebfac5))
+
+
+### Bug Fixes
+
+* analytics code ([5faabbb](https://github.com/karmasakshi/sumran/commit/5faabbb8d46fade9fe644f630809e10a002caf98))
+
 ## [1.19.0](https://github.com/karmasakshi/sumran/compare/v1.18.1...v1.19.0) (2021-01-15)
 
 
