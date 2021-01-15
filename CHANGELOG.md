@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.21.0](https://github.com/karmasakshi/sumran/compare/v1.20.0...v1.21.0) (2021-01-15)
+
+
+### Features
+
+* avoid multiple runs of useeffect ([2f97a73](https://github.com/karmasakshi/sumran/commit/2f97a73bfbed98513a443348a25a4755b97dd5f5))
+
 ## [1.20.0](https://github.com/karmasakshi/sumran/compare/v1.19.0...v1.20.0) (2021-01-15)
 
 
