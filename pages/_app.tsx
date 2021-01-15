@@ -1,9 +1,9 @@
+import { logNavigation } from '@services/analytics';
+import '@styles/global.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { logNavigation } from '../services/analytics';
-import '../styles/global.scss';
 
 const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppProps): JSX.Element => {
 
@@ -11,17 +11,17 @@ const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppPr
 
   useEffect(() => {
 
-    const navigationHandler = (url: string) => {
+    const logNavigationHandler = (url: string) => {
 
       logNavigation(url);
 
     };
 
-    router.events.on('routeChangeStart', navigationHandler);
+    router.events.on('routeChangeStart', logNavigationHandler);
 
     return () => {
 
-      router.events.off('routeChangeStart', navigationHandler);
+      router.events.off('routeChangeStart', logNavigationHandler);
 
     };
 

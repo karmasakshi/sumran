@@ -1,11 +1,12 @@
-import { PRODUCTS } from '../../constants/products';
-import { Product } from '../../interfaces/product';
+import { PRODUCTS } from '@constants/products';
+import { Product } from '@interfaces/product';
+import styles from './product-list.module.scss';
 
 interface ProductListProps { }
 
 const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element => (
 
-  <>
+  <div className={styles.productList}>
 
     <div className="bg-white border border-gray-100 inline-block mt-2 p-4 rounded shadow-md">
 
@@ -35,7 +36,7 @@ const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element =>
 
     <p className="mt-2 px-2 text-xs">* <strong>Prices are indicative</strong> and depend on the quality, quantity and demand of harvest.</p>
 
-  </>
+  </div>
 
 );
 

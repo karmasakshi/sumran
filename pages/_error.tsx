@@ -1,5 +1,5 @@
+import Page from '@components/page/page';
 import Image from 'next/image';
-import Page from '../components/page/page';
 
 interface ErrorProps {
   statusCode: number;

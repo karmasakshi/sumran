@@ -1,4 +1,4 @@
-import { AppWindow } from '../interfaces/app-window';
+import { AppWindow } from '@interfaces/app-window';
 
 declare let appWindow: AppWindow;
 
