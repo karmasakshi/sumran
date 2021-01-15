@@ -19,7 +19,7 @@ const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppPr
 
     }, 5000);
 
-  });
+  }, []);
 
   useEffect((): () => void => {
 
