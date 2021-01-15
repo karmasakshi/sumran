@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/karmasakshi/sumran/compare/v1.21.0...v2.0.0) (2021-01-15)
+
+
+### Features
+
+* remove custom routing events ([b96f6e0](https://github.com/karmasakshi/sumran/commit/b96f6e080d542bf183e4fc5146418bc36265401a))
+
 ## [1.21.0](https://github.com/karmasakshi/sumran/compare/v1.20.0...v1.21.0) (2021-01-15)
 
 
