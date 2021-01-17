@@ -9,7 +9,7 @@ const headers = async () => [
       },
       {
         key: 'Content-Security-Policy',
-        value: process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true' ? "connect-src 'self'; default-src 'none'; font-src https://fonts.gstatic.com; img-src 'self' data:; manifest-src 'self'; prefetch-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; require-trusted-types-for 'script'; upgrade-insecure-requests;" : ''
+        value: process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true' ? "connect-src 'self'; default-src 'self'; font-src https://fonts.gstatic.com; img-src 'self' data:; manifest-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; require-trusted-types-for 'script'; upgrade-insecure-requests;" : ''
       },
       {
         key: 'Permissions-Policy',
