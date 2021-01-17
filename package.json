@@ -17,7 +17,8 @@
     "remove-dependencies": "npm remove autoprefixer next postcss react react-dom sass tailwindcss",
     "add-devDependencies": "npm add --save-dev @types/node @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser cz-conventional-changelog eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-react standard-version typescript",
     "remove-devDependencies": "npm remove @types/node @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser cz-conventional-changelog eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-react standard-version typescript",
-    "reinstall-dependencies": "npm run remove-dependencies && npm run remove-devDependencies && npm run add-dependencies && npm run add-devDependencies && npm run build"
+    "reinstall-dependencies": "npm run remove-dependencies && npm run remove-devDependencies && npm run add-dependencies && npm run add-devDependencies",
+    "postreinstall-dependencies": "npm run build"
   },
   "repository": {
     "type": "git",
