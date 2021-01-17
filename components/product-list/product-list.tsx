@@ -1,12 +1,11 @@
 import { PRODUCTS } from '@constants/products';
 import { Product } from '@interfaces/product';
-import styles from './product-list.module.scss';
 
 interface ProductListProps { }
 
 const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element => (
 
-  <div className={styles.productList}>
+  <div>
 
     <div className="bg-white border border-gray-100 inline-block mt-2 p-4 rounded shadow-md">
 
