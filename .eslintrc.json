@@ -38,11 +38,13 @@
       "error",
       "always"
     ],
+    "arrow-spacing": "error",
     "no-alert": "error",
     "no-console": "error",
     "no-shadow": "error",
     "padded-blocks": "error",
     "sort-keys": "error",
+    "space-infix-ops": "error",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-inferrable-types": "off"
   },

@@ -1,7 +1,7 @@
 import { PRODUCTS } from '@constants/products';
 import { Product } from '@interfaces/product';
 
-const ProductList: () => JSX.Element =()=> (
+const ProductList: () => JSX.Element = () => (
 
   <div>
 
