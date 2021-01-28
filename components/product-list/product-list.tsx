@@ -1,9 +1,7 @@
 import { PRODUCTS } from '@constants/products';
 import { Product } from '@interfaces/product';
 
-interface ProductListProps { }
-
-const ProductList: (props: ProductListProps) => JSX.Element = (): JSX.Element => (
+const ProductList: () => JSX.Element =()=> (
 
   <div>
 

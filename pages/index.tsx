@@ -2,9 +2,7 @@ import Page from '@components/page/page';
 import ProductList from '@components/product-list/product-list';
 import Image from 'next/image';
 
-export interface HomeProps { }
-
-const Home: (props: HomeProps) => JSX.Element = (): JSX.Element => (
+const Home: () => JSX.Element = (): JSX.Element => (
 
   <Page title="">
 

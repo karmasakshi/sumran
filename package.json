@@ -15,8 +15,8 @@
     "release-patch": "npx --no-install standard-version --release-as patch && git push --follow-tags && git checkout main && git merge development && git push && git checkout development",
     "add-dependencies": "npm add autoprefixer next postcss react react-dom sass tailwindcss",
     "remove-dependencies": "npm remove autoprefixer next postcss react react-dom sass tailwindcss",
-    "add-devDependencies": "npm add --save-dev @types/node @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser cz-conventional-changelog eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-react standard-version typescript",
-    "remove-devDependencies": "npm remove @types/node @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser cz-conventional-changelog eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-react standard-version typescript",
+    "add-devDependencies": "npm add --save-dev @types/node @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser cz-conventional-changelog eslint eslint-plugin-react standard-version typescript",
+    "remove-devDependencies": "npm remove @types/node @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser cz-conventional-changelog eslint eslint-plugin-react standard-version typescript",
     "reinstall-dependencies": "npm run remove-dependencies && npm run remove-devDependencies && npm run add-dependencies && npm run add-devDependencies",
     "postreinstall-dependencies": "npm run build"
   },
@@ -40,14 +40,10 @@
   "devDependencies": {
     "@types/node": "^14.14.22",
     "@types/react": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^4.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.18.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.22.0",
     "standard-version": "^9.1.0",
     "typescript": "^4.1.3"
