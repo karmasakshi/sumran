@@ -1,3 +1,4 @@
+import splitbee from '@splitbee/web';
 import '@styles/global.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -8,12 +9,12 @@ const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppPr
 
   useEffect((): void => {
 
-    setTimeout((): void => {
+    splitbee.init({
+      apiUrl: '/sb-api',
+      scriptUrl: '/sb.js'
+    });
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      if ((window as any).splitbee) (window as any).splitbee.user.set({ appVersion: version });
-
-    }, 5000);
+    splitbee.user.set({ appVersion: version });
 
   }, []);
 

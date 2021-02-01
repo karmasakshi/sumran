@@ -16,9 +16,6 @@ class MyDocument extends Document {
 
         <Head>
 
-          {/* Splitbee (Proxied) */}
-          <script async data-api="/sb-api" src="/sb.js"></script>
-
           {/* General Icons */}
           <link rel="icon" type="image/png" href="/favicon.ico"></link>
           <link rel="icon" sizes="16x16" type="image/png" href="/icons/favicon-16x16.png"></link>

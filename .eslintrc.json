@@ -39,6 +39,7 @@
       "always"
     ],
     "arrow-spacing": "error",
+    "comma-dangle": "error",
     "no-alert": "error",
     "no-console": "error",
     "no-shadow": "error",
@@ -46,7 +47,40 @@
     "sort-keys": "error",
     "space-infix-ops": "error",
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-inferrable-types": "off"
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowConciseArrowFunctionExpressionsStartingWithVoid": false,
+        "allowDirectConstAssertionInArrowFunctions": false,
+        "allowExpressions": false,
+        "allowHigherOrderFunctions": false,
+        "allowTypedFunctionExpressions": true
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": [
+      "error",
+      {
+        "allowArgumentsExplicitlyTypedAsAny": false,
+        "allowDirectConstAssertionInArrowFunctions": false,
+        "allowHigherOrderFunctions": false,
+        "allowTypedFunctionExpressions": true,
+        "allowedNames": []
+      }
+    ],
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/typedef": [
+      "error",
+      {
+        "arrayDestructuring": true,
+        "arrowParameter": true,
+        "memberVariableDeclaration": true,
+        "objectDestructuring": true,
+        "parameter": true,
+        "propertyDeclaration": true,
+        "variableDeclaration": true,
+        "variableDeclarationIgnoreFunction": false
+      }
+    ]
   },
   "settings": {
     "react": {

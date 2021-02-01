@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import splitbee from '@splitbee/web';
 
-export const logAction = (action: string, data: any = {}): void => {
+export const logAction: (action: string, data: undefined) => void = (action: string, data: undefined): void => {
 
-  (window as any).splitbee.track(action, data);
+  splitbee.track(action, data);
 
 };
