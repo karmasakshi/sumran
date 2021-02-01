@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/karmasakshi/sumran/compare/v2.2.2...v2.3.0) (2021-02-01)
+
+
+### Features
+
+* replace hosted splitbee script ([9ec187c](https://github.com/karmasakshi/sumran/commit/9ec187cb421bb6cff65baaee006b21f81d6011d6))
+
 ### [2.2.2](https://github.com/karmasakshi/sumran/compare/v2.2.1...v2.2.2) (2021-01-28)
 
 ### [2.2.1](https://github.com/karmasakshi/sumran/compare/v2.2.0...v2.2.1) (2021-01-28)
