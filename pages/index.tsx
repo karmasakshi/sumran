@@ -10,7 +10,7 @@ const Home: () => JSX.Element = (): JSX.Element => (
 
     <div className="mt-4 text-2xl">
       <h1>Fresh veggies, harvested weekly.</h1>
-      <a className="inline-flex mt-2 px-2 pb-1 text-green-700 hover:text-green-500" href="https://wa.me/+919971013347?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sumran." rel="noreferrer" target="_blank">Contact Us</a>
+      <a className="inline-flex mt-2 px-2 text-green-700 hover:text-green-500" href="https://wa.me/+919971013347?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sumran." rel="noreferrer" target="_blank">Contact Us</a>
     </div>
 
     <div className="inline-flex my-4">
