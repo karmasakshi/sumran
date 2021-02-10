@@ -56,7 +56,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"></link>
 
           {/* Manifest */}
-          <link rel="manifest" href="/manifest.webmanifest"></link>
+          <link rel="manifest" href="/site.webmanifest"></link>
 
         </Head>
 
