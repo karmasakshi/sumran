@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/karmasakshi/sumran/compare/v3.1.0...v3.2.0) (2021-02-21)
+
+
+### Features
+
+* update query ([dd094e7](https://github.com/karmasakshi/sumran/commit/dd094e776f7c7700ad46a034341f4224a49033a2))
+
 ## [3.1.0](https://github.com/karmasakshi/sumran/compare/v3.0.0...v3.1.0) (2021-02-21)
 
 
