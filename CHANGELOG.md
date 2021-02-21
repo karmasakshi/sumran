@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/karmasakshi/sumran/compare/v2.4.3...v3.0.0) (2021-02-21)
+
+
+### Features
+
+* add graphcms ([a0c4584](https://github.com/karmasakshi/sumran/commit/a0c4584ee5b6074f6fdcc674704861b58b9adc7d))
+
+
+### Bug Fixes
+
+* update lint rules ([aee5755](https://github.com/karmasakshi/sumran/commit/aee5755ecaa74097e7c95bf3a7fa5806b4afd48f))
+
 ### [2.4.3](https://github.com/karmasakshi/sumran/compare/v2.4.2...v2.4.3) (2021-02-21)
 
 ### [2.4.2](https://github.com/karmasakshi/sumran/compare/v2.4.1...v2.4.2) (2021-02-16)
