@@ -56,7 +56,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetSt
   const graphqlClient: GraphQLClient = new GraphQLClient(graphcmsEndpoint, { headers });
 
   const query: string = gql`{
-    products {
+    products(where: { isAvailable: true }) {
       unit
       rate
       name
