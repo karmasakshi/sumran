@@ -22,29 +22,32 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "arrow-spacing": "warn",
+    "comma-dangle": "warn",
     "indent": [
-      "error",
+      "warn",
       2
     ],
     "linebreak-style": [
       "error",
       "unix"
     ],
+    "no-alert": "warn",
+    "no-console": "warn",
+    "no-empty": "error",
+    "no-shadow": "error",
+    "no-unused-vars": "warn",
+    "padded-blocks": "warn",
+    "prefer-const": "warn",
     "quotes": [
-      "error",
+      "warn",
       "single"
     ],
     "semi": [
-      "error",
+      "warn",
       "always"
     ],
-    "arrow-spacing": "error",
-    "comma-dangle": "error",
-    "no-alert": "error",
-    "no-console": "error",
-    "no-shadow": "error",
-    "padded-blocks": "error",
-    "sort-keys": "error",
+    "sort-keys": "warn",
     "space-infix-ops": "error",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-function-return-type": [
@@ -68,8 +71,9 @@
       }
     ],
     "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/typedef": [
-      "error",
+      "warn",
       {
         "arrayDestructuring": true,
         "arrowParameter": true,
