@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/karmasakshi/sumran/compare/v3.0.0...v3.1.0) (2021-02-21)
+
+
+### Features
+
+* add social icons ([80483d1](https://github.com/karmasakshi/sumran/commit/80483d19d977850f5d4c3d8edef27d1f4b7b9dbd))
+
 ## [3.0.0](https://github.com/karmasakshi/sumran/compare/v2.4.3...v3.0.0) (2021-02-21)
 
 
