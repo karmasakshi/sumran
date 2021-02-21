@@ -1,11 +1,11 @@
 import splitbee from '@splitbee/web';
 import '@styles/global.scss';
-import type { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { useEffect } from 'react';
+import { FunctionComponent, ReactElement, useEffect } from 'react';
 import { version } from '../package.json';
 
-const MyApp: (props: AppProps) => JSX.Element = ({ Component, pageProps }: AppProps): JSX.Element => {
+const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }: AppProps): ReactElement => {
 
   useEffect((): void => {
 

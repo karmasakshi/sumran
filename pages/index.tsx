@@ -1,8 +1,16 @@
 import Page from '@components/page/page';
 import ProductList from '@components/product-list/product-list';
+import { Product } from '@interfaces/product';
+import { gql, GraphQLClient } from 'graphql-request';
+import { GetStaticProps, GetStaticPropsResult } from 'next';
 import Image from 'next/image';
+import { FunctionComponent, ReactElement } from 'react';
 
-const Home: () => JSX.Element = (): JSX.Element => (
+interface HomeProps {
+  products: Product[];
+}
+
+const Home: FunctionComponent<HomeProps> = ({ products }: HomeProps): ReactElement => (
 
   <Page title="">
 
@@ -17,12 +25,55 @@ const Home: () => JSX.Element = (): JSX.Element => (
       <Image alt="Divider" height={24} src="/flower.svg" width={24} />
     </div>
 
-    <p className="block text-xl">Rate Card</p>
+    <div className={products.length ? '' : 'invisible'}>
 
-    <ProductList></ProductList>
+      <p className="block text-xl">Rate Card</p>
+
+      <ProductList products={products}></ProductList>
+
+    </div>
 
   </Page>
 
 );
+
+export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetStaticPropsResult<HomeProps>> => {
+
+  const graphcmsEndpoint: string = process.env.GRAPHCMS_ENDPOINT || '';
+  const graphcmsToken: string = process.env.GRAPHCMS_TOKEN || '';
+  const headers: { [header: string]: string } = { authorization: `Bearer ${graphcmsToken}` };
+  const graphqlClient: GraphQLClient = new GraphQLClient(graphcmsEndpoint, { headers });
+
+  const query: string = gql`{
+    products {
+      unit
+      rate
+      name
+      otherNames
+    }
+  }`;
+
+  let products: Product[] = [];
+
+  try {
+
+    const response: { products: Product[] } = await graphqlClient.request<{ products: Product[] }>(query);
+
+    products = response.products;
+
+  } catch {
+
+    products = [];
+
+  }
+
+  return {
+    props: {
+      products
+    },
+    revalidate: 1
+  };
+
+};
 
 export default Home;

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { ReactNode } from 'react';
+import { FunctionComponent, ReactElement, ReactNode } from 'react';
 import styles from './page.module.scss';
 
 interface PageProps {
@@ -7,7 +7,7 @@ interface PageProps {
   title: string;
 }
 
-const Page: (props: PageProps) => JSX.Element = ({ children, title }: PageProps): JSX.Element => (
+const Page: FunctionComponent<PageProps> = ({ children, title }: PageProps): ReactElement => (
 
   <div className={styles.page}>
 
