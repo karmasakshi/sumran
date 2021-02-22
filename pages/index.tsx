@@ -11,9 +11,10 @@ import { FunctionComponent, ReactElement } from 'react';
 interface HomeProps {
   informationCards: InformationCard[];
   products: Product[];
+  updatedAt: string;
 }
 
-const Home: FunctionComponent<HomeProps> = ({ informationCards, products }: HomeProps): ReactElement => (
+const Home: FunctionComponent<HomeProps> = ({ informationCards, products, updatedAt }: HomeProps): ReactElement => (
 
   <Page title="">
 
@@ -27,23 +28,28 @@ const Home: FunctionComponent<HomeProps> = ({ informationCards, products }: Home
       </a>
     </div>
 
-    <div className="my-4">
-      <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
-    </div>
+    <div className={products.length ? '' : 'hidden'}>
 
-    <div className={products.length ? '' : 'invisible'}>
+      <div className="my-4">
+        <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
+      </div>
 
       <p className="inline-block text-xl">Rate Card</p>
+      <p className="text-gray-500 text-xs">Last updated on: {updatedAt === '' ? '?' : (new Date(updatedAt)).toLocaleDateString()}</p>
 
       <ProductList products={products}></ProductList>
 
     </div>
 
-    <div className="my-4">
-      <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
-    </div>
+    <div className={informationCards.length ? '' : 'hidden'}>
 
-    <InformationCardCarousel informationCards={informationCards}></InformationCardCarousel>
+      <div className="my-4">
+        <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
+      </div>
+
+      <InformationCardCarousel informationCards={informationCards}></InformationCardCarousel>
+
+    </div>
 
     <div className="my-4">
       <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
@@ -83,11 +89,13 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetSt
       rate
       name
       otherNames
+      updatedAt
     }
   }`;
 
   let informationCards: InformationCard[] = [];
   let products: Product[] = [];
+  let updatedAt: string = '';
 
   try {
 
@@ -97,17 +105,22 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetSt
     const getProductsResponse: { products: Product[] } = await graphqlClient.request<{ products: Product[] }>(getProductsQuery);
     products = getProductsResponse.products;
 
+    const sortedUpdatedAts: number[] = products.map((product: Product): number => new Date(product.updatedAt).valueOf()).sort((a: number, b: number): number => b - a);
+    updatedAt = sortedUpdatedAts.length ? (new Date(sortedUpdatedAts[0])).toISOString() : '';
+
   } catch {
 
     informationCards = [];
     products = [];
+    updatedAt = '';
 
   }
 
   return {
     props: {
       informationCards,
-      products
+      products,
+      updatedAt
     },
     revalidate: 1
   };
