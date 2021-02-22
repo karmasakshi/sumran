@@ -1,3 +1,5 @@
+@import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,4 +11,23 @@ html {
 
 body {
   font-family: 'Playfair Display', serif;
+}
+
+// react-responsive-carousel overrides
+
+.carousel.carousel-slider {
+  border-radius: 16px;
+  margin: 0 auto;
+  max-width: 480px;
+  .control-arrow {
+    padding: 5px 25px;
+  }
+}
+
+.carousel {
+  .thumb {
+    img {
+      border-radius: 2px;
+    }
+  }
 }

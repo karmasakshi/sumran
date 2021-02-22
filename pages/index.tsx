@@ -1,5 +1,7 @@
+import InformationCardCarousel from '@components/information-card-carousel/information-card-carousel';
 import Page from '@components/page/page';
 import ProductList from '@components/product-list/product-list';
+import { InformationCard } from '@interfaces/information-card';
 import { Product } from '@interfaces/product';
 import { gql, GraphQLClient } from 'graphql-request';
 import { GetStaticProps, GetStaticPropsResult } from 'next';
@@ -7,10 +9,11 @@ import Image from 'next/image';
 import { FunctionComponent, ReactElement } from 'react';
 
 interface HomeProps {
+  informationCards: InformationCard[];
   products: Product[];
 }
 
-const Home: FunctionComponent<HomeProps> = ({ products }: HomeProps): ReactElement => (
+const Home: FunctionComponent<HomeProps> = ({ informationCards, products }: HomeProps): ReactElement => (
 
   <Page title="">
 
@@ -40,6 +43,12 @@ const Home: FunctionComponent<HomeProps> = ({ products }: HomeProps): ReactEleme
       <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
     </div>
 
+    <InformationCardCarousel informationCards={informationCards}></InformationCardCarousel>
+
+    <div className="my-4">
+      <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
+    </div>
+
     <a className="inline-block mx-2" href="https://instagram.com/sumranorganicfarms" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={24} objectFit="contain" src="/instagram.svg" width={24} /></a>
     <a className="inline-block mx-2" href="https://m.facebook.com/profile.php?id=104025124696726" rel="noreferrer" target="_blank"><Image alt="Facebook logo" height={24} objectFit="contain" src="/facebook.svg" width={24} /></a>
     <a className="inline-block mx-2" href="https://instagram.com/sumranorganics" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={24} objectFit="contain" src="/instagram.svg" width={24} /></a>
@@ -55,7 +64,20 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetSt
   const headers: { [header: string]: string } = { authorization: `Bearer ${graphcmsToken}` };
   const graphqlClient: GraphQLClient = new GraphQLClient(graphcmsEndpoint, { headers });
 
-  const query: string = gql`{
+  const getInformationCardsQuery: string = gql`{
+    informationCards {
+      id
+      image {
+        url (
+          transformation: {
+            image: { resize: { fit: crop, height: 800, width: 800 } }
+          }
+        )
+      }
+    }
+  }`;
+
+  const getProductsQuery: string = gql`{
     products(where: { isAvailable: true }) {
       unit
       rate
@@ -64,22 +86,27 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetSt
     }
   }`;
 
+  let informationCards: InformationCard[] = [];
   let products: Product[] = [];
 
   try {
 
-    const response: { products: Product[] } = await graphqlClient.request<{ products: Product[] }>(query);
+    const getInformationCardsResponse: { informationCards: InformationCard[] } = await graphqlClient.request<{ informationCards: InformationCard[] }>(getInformationCardsQuery);
+    informationCards = getInformationCardsResponse.informationCards;
 
-    products = response.products;
+    const getProductsResponse: { products: Product[] } = await graphqlClient.request<{ products: Product[] }>(getProductsQuery);
+    products = getProductsResponse.products;
 
   } catch {
 
+    informationCards = [];
     products = [];
 
   }
 
   return {
     props: {
+      informationCards,
       products
     },
     revalidate: 1
