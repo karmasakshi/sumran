@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/karmasakshi/sumran/compare/v3.3.0...v4.0.0) (2021-02-22)
+
+
+### Features
+
+* add image slider ([c3ca259](https://github.com/karmasakshi/sumran/commit/c3ca2598b505c1d3e6247460dca2cd5e106e0f09))
+* update styles ([3a757b6](https://github.com/karmasakshi/sumran/commit/3a757b6a4fbdc6ea508724d4b7d273e774aade4e))
+
 ## [3.3.0](https://github.com/karmasakshi/sumran/compare/v3.2.0...v3.3.0) (2021-02-22)
 
 
