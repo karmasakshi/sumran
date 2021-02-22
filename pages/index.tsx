@@ -30,7 +30,7 @@ const Home: FunctionComponent<HomeProps> = ({ products }: HomeProps): ReactEleme
 
     <div className={products.length ? '' : 'invisible'}>
 
-      <p className="block text-xl">Rate Card</p>
+      <p className="inline-block text-xl">Rate Card</p>
 
       <ProductList products={products}></ProductList>
 
@@ -40,9 +40,9 @@ const Home: FunctionComponent<HomeProps> = ({ products }: HomeProps): ReactEleme
       <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
     </div>
 
-    <a className="mx-2" href="https://instagram.com/sumranorganicfarms" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={32} objectFit="contain" src="/instagram.svg" width={32} /></a>
-    <a className="mx-2" href="https://m.facebook.com/profile.php?id=104025124696726" rel="noreferrer" target="_blank"><Image alt="Facebook logo" height={32} objectFit="contain" src="/facebook.svg" width={32} /></a>
-    <a className="mx-2" href="https://instagram.com/sumranorganics" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={32} objectFit="contain" src="/instagram.svg" width={32} /></a>
+    <a className="inline-block mx-2" href="https://instagram.com/sumranorganicfarms" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={24} objectFit="contain" src="/instagram.svg" width={24} /></a>
+    <a className="inline-block mx-2" href="https://m.facebook.com/profile.php?id=104025124696726" rel="noreferrer" target="_blank"><Image alt="Facebook logo" height={24} objectFit="contain" src="/facebook.svg" width={24} /></a>
+    <a className="inline-block mx-2" href="https://instagram.com/sumranorganics" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={24} objectFit="contain" src="/instagram.svg" width={24} /></a>
 
   </Page>
 
