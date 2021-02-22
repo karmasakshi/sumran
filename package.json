@@ -1,6 +1,6 @@
 {
   "name": "sumran",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "scripts": {
     "build": "next build",
     "serve": "next dev",

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/karmasakshi/sumran/compare/v4.0.0...v4.0.1) (2021-02-22)
+
+
+### Bug Fixes
+
+* update csp header ([0a3d30a](https://github.com/karmasakshi/sumran/commit/0a3d30a40459db9c8ff678c29f1ea820c513f375))
+
 ## [4.0.0](https://github.com/karmasakshi/sumran/compare/v3.3.0...v4.0.0) (2021-02-22)
 
 
