@@ -18,8 +18,8 @@ const Home: FunctionComponent<HomeProps> = ({ products }: HomeProps): ReactEleme
 
     <div className="mt-4 text-2xl">
       <h1>Fresh veggies, harvested weekly.</h1>
-      <a className="mt-2 px-2 text-green-700 hover:text-green-500" href="https://wa.me/+919971013347?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sumran." rel="noreferrer" target="_blank">
-        <Image alt="WhatsApp logo" height={20} objectFit="contain" src="/whatsapp.png" width={20} />
+      <a className="inline-block mt-2 px-2 text-green-700 hover:text-green-500" href="https://wa.me/+919971013347?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sumran." rel="noreferrer" target="_blank">
+        <Image alt="WhatsApp logo" height={18} objectFit="contain" src="/whatsapp.svg" width={18} />
         <span>&nbsp;Contact Us</span>
       </a>
     </div>
@@ -40,9 +40,9 @@ const Home: FunctionComponent<HomeProps> = ({ products }: HomeProps): ReactEleme
       <Image alt="Divider" height={24} objectFit="contain" src="/flower.svg" width={24} />
     </div>
 
-    <a className="mx-2" href="https://instagram.com/sumranorganicfarms" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={32} objectFit="contain" src="/instagram.png" width={32} /></a>
-    <a className="mx-2" href="https://m.facebook.com/profile.php?id=104025124696726" rel="noreferrer" target="_blank"><Image alt="Facebook logo" height={32} objectFit="contain" src="/facebook.png" width={32} /></a>
-    <a className="mx-2" href="https://instagram.com/sumranorganics" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={32} objectFit="contain" src="/instagram.png" width={32} /></a>
+    <a className="mx-2" href="https://instagram.com/sumranorganicfarms" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={32} objectFit="contain" src="/instagram.svg" width={32} /></a>
+    <a className="mx-2" href="https://m.facebook.com/profile.php?id=104025124696726" rel="noreferrer" target="_blank"><Image alt="Facebook logo" height={32} objectFit="contain" src="/facebook.svg" width={32} /></a>
+    <a className="mx-2" href="https://instagram.com/sumranorganics" rel="noreferrer" target="_blank"><Image alt="Instagram logo" height={32} objectFit="contain" src="/instagram.svg" width={32} /></a>
 
   </Page>
 
