@@ -106,7 +106,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetSt
     products = getProductsResponse.products;
 
     const sortedUpdatedAts: number[] = products.map((product: Product): number => new Date(product.updatedAt).valueOf()).sort((a: number, b: number): number => b - a);
-    updatedAt = sortedUpdatedAts.length ? (new Date(sortedUpdatedAts[0])).toISOString() : '';
+    updatedAt = sortedUpdatedAts.length ? (new Date(String(sortedUpdatedAts[0]))).toISOString() : '';
 
   } catch {
 
