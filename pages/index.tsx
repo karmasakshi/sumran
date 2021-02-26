@@ -8,13 +8,13 @@ import { GetStaticProps, GetStaticPropsResult } from 'next';
 import Image from 'next/image';
 import { FunctionComponent, ReactElement } from 'react';
 
-interface HomeProps {
+interface IndexProps {
   informationCards: InformationCard[];
   products: Product[];
   updatedAt: string;
 }
 
-const Home: FunctionComponent<HomeProps> = ({ informationCards, products, updatedAt }: HomeProps): ReactElement => (
+const Index: FunctionComponent<IndexProps> = ({ informationCards, products, updatedAt }: IndexProps): ReactElement => (
 
   <Page title="">
 
@@ -63,7 +63,7 @@ const Home: FunctionComponent<HomeProps> = ({ informationCards, products, update
 
 );
 
-export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetStaticPropsResult<HomeProps>> => {
+export const getStaticProps: GetStaticProps<IndexProps> = async (): Promise<GetStaticPropsResult<IndexProps>> => {
 
   const graphcmsEndpoint: string = process.env.GRAPHCMS_ENDPOINT || '';
   const graphcmsToken: string = process.env.GRAPHCMS_TOKEN || '';
@@ -127,4 +127,4 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (): Promise<GetSt
 
 };
 
-export default Home;
+export default Index;
