@@ -11,10 +11,9 @@ import { FunctionComponent, ReactElement } from 'react';
 interface IndexProps {
   informationCards: InformationCard[];
   products: Product[];
-  updatedAt: string;
 }
 
-const Index: FunctionComponent<IndexProps> = ({ informationCards, products, updatedAt }: IndexProps): ReactElement => (
+const Index: FunctionComponent<IndexProps> = ({ informationCards, products }: IndexProps): ReactElement => (
 
   <Page title="">
 
@@ -35,7 +34,6 @@ const Index: FunctionComponent<IndexProps> = ({ informationCards, products, upda
       </div>
 
       <p className="inline-block text-xl">Rate Card</p>
-      <p className="text-gray-500 text-xs">Last updated on: {updatedAt === '' ? '?' : (new Date(updatedAt)).toLocaleDateString()}</p>
 
       <ProductList products={products}></ProductList>
 
@@ -89,13 +87,11 @@ export const getStaticProps: GetStaticProps<IndexProps> = async (): Promise<GetS
       rate
       name
       otherNames
-      updatedAt
     }
   }`;
 
   let informationCards: InformationCard[] = [];
   let products: Product[] = [];
-  let updatedAt: string = '';
 
   try {
 
@@ -105,22 +101,17 @@ export const getStaticProps: GetStaticProps<IndexProps> = async (): Promise<GetS
     const getProductsResponse: { products: Product[] } = await graphqlClient.request<{ products: Product[] }>(getProductsQuery);
     products = getProductsResponse.products;
 
-    const sortedUpdatedAts: number[] = products.map((product: Product): number => new Date(product.updatedAt).valueOf()).sort((a: number, b: number): number => b - a);
-    updatedAt = sortedUpdatedAts.length ? (new Date(String(sortedUpdatedAts[0]))).toISOString() : '';
-
   } catch {
 
     informationCards = [];
     products = [];
-    updatedAt = '';
 
   }
 
   return {
     props: {
       informationCards,
-      products,
-      updatedAt
+      products
     },
     revalidate: 1
   };

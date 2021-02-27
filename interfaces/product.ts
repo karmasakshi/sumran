@@ -4,5 +4,4 @@ export interface Product {
   otherNames: string[];
   rate: number;
   unit: string;
-  updatedAt: string;
 }
